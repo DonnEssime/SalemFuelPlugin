@@ -16,8 +16,6 @@ public class FuelFillerPlugin extends Plugin{
     
     public void execute(final UI ui){
         
-        ui.message("[StallSeller] Selling items to stall. Please wait until further notice.", GameUI.MsgType.INFO);
-
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -31,7 +29,7 @@ public class FuelFillerPlugin extends Plugin{
             ui.message("[FuelFillerPlugin] Take the fuel on your hand.", GameUI.MsgType.INFO);
             return;
         }
-        //we find the closest item on the ground
+        //we find the closest object that fits
         Collection<Gob> gobs = ui.sess.glob.oc.getGobs();
         double distance = 0.0;
         Gob closest_gob = null;
