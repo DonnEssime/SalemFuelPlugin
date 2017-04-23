@@ -1,0 +1,17 @@
+#ABUTTON LAYER FOR RES src//\paginae\add\fuelfiller.res
+#String pr
+paginae/act/add
+#uint16 pver
+2
+#String name
+Fill the closest fuel-requiring object (have the fuel on your cursor)
+#String preq
+
+#uint16 hk
+73
+#uint16 ad length
+2
+#String ad[0]
+@
+#String ad[1]
+fuelfiller
